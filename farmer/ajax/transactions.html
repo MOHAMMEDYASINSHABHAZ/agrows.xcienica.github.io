@@ -1,0 +1,97 @@
+
+        <link href="assets/plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css" rel="stylesheet" type="text/css" media="screen">
+
+    
+        <div class="page-title-box">
+            <div class="row align-items-center">
+        
+                <div class="col-sm-6">
+                    <h4 class="page-title">Transaction</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Outlets</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Transaction</a></li>
+                        
+                    </ol>
+        
+                </div>
+                <div class="col-sm-6">
+        
+                    
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+
+                        
+
+                        <div class="table-rep-plugin">
+                            <div class="table-responsive mb-0" data-pattern="priority-columns">
+                                <table id="tech-companies-1" class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Outlet</th>
+                                        <th data-priority="1">Transaction ID</th>
+                                        <th data-priority="1">Contact Person</th>
+                                        <th data-priority="3">Mobile Number</th>
+                                        <th data-priority="1">Amount Of Stock</th>
+                                        <th data-priority="1">Unit Of Measurement</th>
+                                        <th data-priority="6">Price</th>
+                                        <th data-priority="6">Payment Method</th>
+                                        <th data-priority="6">Payment Status</th>
+                                      
+                                        
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th><span class="co-name">Outlet1</span></th>
+                                        <td>#tnx001</td>
+                                        <td>Umair</td>
+                                        <td>7019517571</td>
+                                        <td>300pieces</td>
+                                        <td>Number</td>
+                                        <td>$300</td>
+                                        <td>Debit-Card</td>
+                                        
+                                        <td><span class="badge badge-success">Recieved</span></td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <th><span class="co-name">Outlet2</span></th>
+                                        <td>#tnx002</td>
+                                        <td>Ibbu</td>
+                                        <td>9036252542</td>
+                                        <td>300pieces</td>
+                                        <td>Number</td>
+                                        <td>$900</td>
+                                        <td>-</td>
+                                        <td><span class="badge badge-success">Pending</span></td>
+                                       </tr>
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- end col -->
+        </div> 
+        
+   
+<script src="assets/plugins/RWD-Table-Patterns/dist/js/rwd-table.min.js"></script>
+
+<script>
+    $(function() {
+        $('.table-responsive').responsiveTable({
+            addDisplayAllBtn: 'btn btn-secondary'
+        });
+    });
+</script>
+

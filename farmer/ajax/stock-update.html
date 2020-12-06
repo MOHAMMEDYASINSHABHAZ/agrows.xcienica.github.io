@@ -1,0 +1,77 @@
+
+        <link href="assets/plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css" rel="stylesheet" type="text/css" media="screen">
+      
+<link href="assets/plugins/sweet-alert2/sweetalert2.min.css" rel="stylesheet" type="text/css">
+
+    
+        <div class="page-title-box">
+            <div class="row align-items-center">
+        
+                <div class="col-sm-6">
+                    <h4 class="page-title">Update Stock</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Stock Management</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Update Stock</a></li>
+                        
+                    </ol>
+        
+                </div>
+                <div class="col-sm-6">
+        
+                    
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+
+                        
+ 
+                        <div class="table-rep-plugin">
+                            <div class="table-responsive mb-0" data-pattern="priority-columns">
+                                <table id="tech-companies-1" class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Item Barcode</th>
+                                        <th>Product Name</th>
+                                        <th data-priority="1">Category</th>
+                                        <th data-priority="1">Image</th>
+                                        <th data-priority="6">Stock Value</th>
+                                        <th data-priority="3">Minimum Threshold Level</th>
+                                        <th data-priority="6">Unit Of Measurement</th>
+                                        <th data-priority="6">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="ptable">
+                                   
+                                    
+                                    </tbody>
+                                </table>
+                                <div id="mdel"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- end col -->
+        </div> 
+        
+   
+<script src="assets/pages/stock-update.js"></script>
+  <script src="assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
+
+<script src="assets/plugins/RWD-Table-Patterns/dist/js/rwd-table.min.js"></script>
+<script>
+    $(function() {
+        $('.table-responsive').responsiveTable({
+            addDisplayAllBtn: 'btn btn-secondary'
+        });
+    });
+</script>
+
+ 

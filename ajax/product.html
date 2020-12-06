@@ -15,8 +15,8 @@
 
 
         <div class="mb-3">
-            <label for="address">Product</label>
-            <select class="custom-select d-block w-100" id="address" required>
+            <label for="product">Product</label>
+            <select class="custom-select d-block w-100" id="product" required>
               <option value="">choose...</option>
               <option>Vegetables</option>
               <option>Fruits</option>
@@ -61,7 +61,7 @@
 
         <div class="mb-3">
           <label for="image">image</label>
-          <input type="file" class="form-control" id=""  value="" required>
+          <input type="file" class="form-control" id="img"  value="" required>
         </div>
 
 
@@ -69,8 +69,8 @@
 
 
         <div class="mb-3">
-          <label for="Price ">Price</label>
-          <input type="number " class="form-control" id="price " placeholder="Price " value="" required>
+          <label for="Price">Price</label>
+          <input type="number" class="form-control" id="price" placeholder="Price" value="" required>
           <div class="invalid-feedback">
             Valid Price  is required.
           </div>
@@ -79,7 +79,10 @@
 
         
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Add Product</button>
+        <button onclick="addproduct()" class="btn btn-primary btn-lg btn-block" type="submit">Add Product</button>
       </form>
     </div>
   </div>
+
+
+  <script src = "assets/pages/add-product.js"></script>

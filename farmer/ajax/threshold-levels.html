@@ -1,0 +1,104 @@
+
+        <link href="assets/plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="assets/plugins/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    
+        <div class="page-title-box">
+            <div class="row align-items-center">
+        
+                <div class="col-sm-6">
+                    <h4 class="page-title">Threshold levels</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Stock Management</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Threshold levels</a></li>
+                        
+                    </ol>
+        
+                </div>
+                <div class="col-sm-6">
+        
+                    
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+
+                        
+
+                        <div class="table-rep-plugin">
+                            <div class="table-responsive mb-0" data-pattern="priority-columns">
+                                <table id="tech-companies-1" class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Product Name</th>
+                                        <th data-priority="1">Category</th>
+                                        <th data-priority="3">Sub Category</th>
+                                        <th data-priority="1">Image</th>
+                                        <th data-priority="3">Threshold Level</th>
+                                        <th data-priority="6">Unit Of Measurement</th>
+                                        <th scope="col" colspan="4" data-priority="1">Set Threshold level</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th><span class="co-name">Burger</span></th>
+                                        <td>Food</td>
+                                        <td>Non-veg</td>
+                                        <td><img class="d-flex mr-3 rounded-circle" src="assets/images/users/user-2.jpg" alt="Generic placeholder image" height="36"></td>
+                                        <td>100</td>
+                                        <td>pieces</td>
+                                        <td scope="col" colspan="4"> <div class="col-md-12">
+                                            <div class="p-12">
+                                              
+                                                <input type="text" id="range_01">
+                                            </div>
+                                        </div></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="co-name">Cake</span></th>
+                                        <td>Food</td>
+                                        <td>Bevarages</td>
+                                        <td><img class="d-flex mr-3 rounded-circle" src="assets/images/users/user-2.jpg" alt="Generic placeholder image" height="36"></td>
+                                        <td>80</td>
+                                        <td>pieces</td>
+                                        <td scope="col" colspan="4"> <div class="col-md-12">
+                                            <div class="p-12">
+                                                
+                                                <input type="text" id="range_02">
+                                            </div>
+                                        </div></td>
+                                           
+                                        </div> </tr>
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- end col -->
+        </div> 
+        
+   
+<script src="assets/plugins/RWD-Table-Patterns/dist/js/rwd-table.min.js"></script>
+              
+<script src="assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+<script src="assets/pages/rangeslider-init.js"></script>
+<script>
+    $(function() {
+        $('.table-responsive').responsiveTable({
+            addDisplayAllBtn: 'btn btn-secondary'
+        });
+    });
+</script>
+

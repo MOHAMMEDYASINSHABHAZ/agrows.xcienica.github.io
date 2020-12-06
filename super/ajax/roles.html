@@ -1,0 +1,101 @@
+<link href="assets/plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css" rel="stylesheet" type="text/css" media="screen">
+
+    
+<div class="page-title-box">
+    <div class="row align-items-center">
+
+        <div class="col-sm-6">
+            <h4 class="page-title">Roles</h4>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0);">Privilages and Permissions</a></li>
+                <li class="breadcrumb-item"><a href="javascript:void(0);">Roles</a></li>
+                
+            </ol>
+
+           
+        </div>
+        <div class="col-sm-6">
+
+            <div class="float-right d-none d-md-block">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="mdi mdi-settings mr-2"></i> Settings
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+               
+
+                <div class="table-rep-plugin">
+                    <div class="table-responsive mb-0" data-pattern="priority-columns">
+                        <table id="tech-companies-1" class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Role Name</th>
+                                <th data-priority="1">Permissions and privilages</th>
+                                <th data-priority="2">Status</th>
+                                <th data-priority="3">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                               
+                                <td>Super Admin</td>
+                                <td>All  Permission</td>
+                                <td><span class="badge badge-success">active</span></td>
+                                <td><div class="button-items"><button type="button" class="btn btn-warning waves-effect waves-light">Modify</button> <button type="button" class="btn btn-danger waves-effect waves-light">Delete</button></div></td>
+                            </tr>
+                            <tr>
+
+                                <td>Franchize Admin</td>
+                                <td>Franchize Permission</td>
+                                <td><span class="badge badge-success">active</span></td>
+                                <td><div class="button-items"> <button type="button" class="btn btn-warning waves-effect waves-light">Modify</button> <button type="button" class="btn btn-danger waves-effect waves-light">Delete</button></div></td>
+                            </tr>
+
+
+                            
+                                <th><span class="co-name">Outlet Admin</span></th>
+                                <td>Outlet Permission</td>
+                                <td><span class="badge badge-success">inactive</span></td>
+                                <td><div class="button-items"><button type="button" class="btn btn-warning waves-effect waves-light">Modify</button> <button type="button" class="btn btn-danger waves-effect waves-light">Delete</button></div></td>
+                            </tr>
+                           
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div> 
+
+
+<script src="assets/plugins/RWD-Table-Patterns/dist/js/rwd-table.min.js"></script>
+
+<script>
+$(function() {
+$('.table-responsive').responsiveTable({
+    addDisplayAllBtn: 'btn btn-secondary'
+});
+});
+</script>
+

@@ -1,0 +1,82 @@
+
+        <link href="assets/plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css" rel="stylesheet" type="text/css" media="screen">
+
+    
+        <div class="page-title-box">
+            <div class="row align-items-center">
+        
+                <div class="col-sm-6">
+                    <h4 class="page-title">Buyer</h4>
+                   
+        
+                </div>
+                <div class="col-sm-6">
+                    <div class="float-right d-none d-md-block">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-settings mr-2"></i> Settings
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+
+                        
+
+                        <div class="table-rep-plugin">
+                            <div class="table-responsive mb-0" data-pattern="priority-columns">
+                                <table id="tech-companies-1" class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Buyer name</th>
+                                        <th>Email</th>
+                                        <th data-priority="3">Organisation name</th>
+                                        <th data-priority="1">Mobile Number</th>
+                                        <th data-priority="3">GST No</th>
+                                        <th data-priority="3">Address Proof</th>
+                                        <th data-priority="3">Address</th>
+                                        <th data-priority="6">buyer id</th>
+                                        <th data-priority="6">Password</th>
+                                        <th data-priority="6">Status</th>
+                                        <th data-priority="6">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="franchize_table">
+                                    
+                                   
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- end col -->
+        </div> 
+        
+   
+<script src="assets/plugins/RWD-Table-Patterns/dist/js/rwd-table.min.js"></script>
+<script src="assets/pages/index-buyer.js"></script>
+<script>
+    $(function() {
+        $('.table-responsive').responsiveTable({
+            addDisplayAllBtn: 'btn btn-secondary'
+        });
+    });
+</script>
+

@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="assets/plugins/chartist/css/chartist.min.css">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+
+<div class="page-title-box">
+        <div class="row align-items-center">
+
+            <div class="col-sm-6">
+                <h4 class="page-title">Super Admin Dashboard</h4>
+               
+            </div>
+            <div class="col-sm-6">
+    
+                <div class="float-right d-none d-md-block">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mdi mdi-settings mr-2"></i> Settings
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card mini-stat bg-primary text-white">
+                <div onclick="my_ajax('index-franchizes.html')" class="card-body">
+                    <div class="mb-4">
+                        <div class="float-left mini-stat-img mr-4">
+                            <img src="assets/images/services-icon/01.png" alt="" >
+                        </div>
+                        <h5 class="font-16 text-uppercase mt-0 text-white-50">Farmers</h5>
+                        <h4 id="fz" class="font-500">0</h4>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+            <div class="card mini-stat bg-primary text-white">
+                <div class="card-body">
+                    <div class="mb-4">
+                        <div class="float-left mini-stat-img mr-4">
+                            <img src="assets/images/services-icon/02.png" alt="" >
+                        </div>
+                        <h5 class="font-16 text-uppercase mt-0 text-white-50">Buyers</h5>
+                        <h4 class="font-500">0 </h4>
+                       
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+            <div class="card mini-stat bg-primary text-white">
+                <div class="card-body">
+                    <div class="mb-4">
+                        <div class="float-left mini-stat-img mr-4">
+                            <img src="assets/images/services-icon/03.png" alt="" >
+                        </div>
+                        <h5 class="font-16 text-uppercase mt-0 text-white-50">Complaints </h5>
+                        <h4 class="font-500">0</i></h4>
+                        
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card mini-stat bg-primary text-white">
+                <div class="card-body">
+                    <div class="mb-4">
+                        <div class="float-left mini-stat-img mr-4">
+                            <img src="assets/images/services-icon/04.png" alt="" >
+                        </div>
+                        <h5 class="font-16 text-uppercase mt-0 text-white-50">Products</h5>
+                        <h4 class="font-500">0</h4>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+  
+
+<script src="assets/plugins/chartist/js/chartist.min.js"></script>
+<script src="assets/plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+<script src="assets/plugins/peity-chart/jquery.peity.min.js"></script>
+<script src="assets/pages/dashboard.js"></script>
+        
+<script>
+        $('.slimscroll').slimScroll({
+                  height: 'auto',
+                  position: 'right',
+                  size: "7px",
+                  color: '#9ea5ab',
+                  wheelStep: 5,
+                  touchScrollStep: 50
+              });
+      </script>
+      
+       

@@ -1,0 +1,75 @@
+
+        <link href="assets/plugins/RWD-Table-Patterns/dist/css/rwd-table.min.css" rel="stylesheet" type="text/css" media="screen">
+
+    
+        <div class="page-title-box">
+            <div class="row align-items-center">
+        
+                <div class="col-sm-6">
+                    <h4 class="page-title">Products</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Item Master</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Product</a></li>
+                        
+                    </ol>
+        
+                </div>
+                <div class="col-sm-6">
+        
+                    <div class="float-right d-none d-md-block">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light" type="button" onclick="my_ajax('create-product.html')" aria-haspopup="true" aria-expanded="false">
+                                <i class="ti ti-plus"></i> Create Product
+                            </button>
+                            
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+
+                        
+
+                        <div class="table-rep-plugin">
+                            <div class="table-responsive mb-0" data-pattern="priority-columns">
+                                <table id="tech-companies-1" class="table table-striped">
+                                     <thead>
+                                    <tr>
+                                        <th>Product ID</th>
+                                        <th>Product Name</th>
+                                        <th data-priority="1">Category</th>
+                                        <th data-priority="1">Image</th>
+                                        <th data-priority="3">Price</th>
+                                        <th data-priority="6">Stock value</th>
+                                        <th data-priority="6">Unit Of Measurement</th>
+                                        <th data-priority="6">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="ptable">
+                                     
+                                    
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- end col -->
+        </div> 
+        
+   
+<script src="assets/plugins/RWD-Table-Patterns/dist/js/rwd-table.min.js"></script>
+<script src="assets/pages/product.js"></script>
+<script>
+  
+</script>
+

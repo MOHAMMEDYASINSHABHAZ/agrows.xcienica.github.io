@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="assets/plugins/jquery-steps/jquery.steps.css">
+        
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="form-validation.css" rel="stylesheet" type="text/css">
+                <div class="page-title-box">
+                    <div class="row align-items-center">
+                
+                        <div class="col-sm-6">
+                            <h4 class="page-title">Create Business Category</h4>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Business Category</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Create Business Category</a></li>
+                                
+                            </ol>
+                
+                        </div>
+                        <div class="col-sm-6">
+                
+                            <div class="float-right d-none d-md-block">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="mdi mdi-settings mr-2"></i> Settings
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <h4 class="mt-0 header-title">Category Details</h4>
+                               
+
+                              
+                                <div class="form-group row">
+                                    <label for="example-tel-input" class="col-sm-2 col-form-label">Category Name</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" value="" id="category">
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                                <div class="form-group row">
+                                    <label for="example-tel-input" class="col-sm-2 col-form-label">Category Image</label>
+                                    <div class="col-sm-10">
+                                        <input type="file" class="form-control" style="padding:3px;" id="cimage" placeholder="" value="" required>
+                                       </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="example-tel-input" class="col-sm-2 col-form-label">Upload Progress</label>
+                                    <div style="height: auto;" class="progress col-sm-10 progress-sm mb-2 form-control">
+                                      <progress class="progress-bar" id="uploader1" style="width: 100%; height:5px; " value="0" max="100" role="progressbar" ></progress>
+                                    </div>
+                                    <small id="" class="form-text text-muted">After uploading the image file save button wiil appear.</small>
+                              
+                                </div>
+                                
+                               
+                               
+                                <div class="text-center m-t-15">
+                                    <button type="button" onclick="addcategory()" class="btn btn-primary waves-effect waves-light">Add</button>
+                                </div>
+                                
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                                
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+                </div>
+               
+
+                    
+        <script src="assets/plugins/dropzone/dist/dropzone.js"></script>
+
+         <script src="assets/plugins/jquery-steps/jquery.steps.min.js"></script>           
+        <script src="assets/pages/create_business_category.js"></script>
+
+        <script>
+            Dropzone.autoDiscover = false;
+                $(document).ready(function(){
+                    $(".dropzone").dropzone();
+                });
+            </script>

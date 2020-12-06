@@ -1,0 +1,305 @@
+<link rel="stylesheet" href="assets/plugins/jquery-steps/jquery.steps.css">
+        
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="form-validation.css" rel="stylesheet" type="text/css">
+                
+               <div class="page-title-box">
+                    <div class="row align-items-center">
+                
+                        <div class="col-sm-6">
+                            <h4 class="page-title">Create Franchize</h4>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Franchize</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Create Franchize</a></li>
+                                
+                            </ol>
+                
+                        </div>
+                        <div class="col-sm-6">
+                
+                            <div class="float-right d-none d-md-block">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="mdi mdi-settings mr-2"></i> Settings
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="container">
+                
+                                    <div class="row">
+                                      
+                                      <div class="col-md-12 order-md-1">
+                                        <h6 class="mb-3">Business Details</h6>
+                                        <form class="needs-validation" novalidate>
+                                          
+                                          <div class="mb-3">
+                                            <label for="Category">Category Of Business</label>
+                                            <select class="custom-select d-block w-100" id="cob" required>
+                                              <option value="">select</option>
+                                              <option value="Restaurant">Restaurant</option>
+                                              
+                                              
+                                              
+                                            </select>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                              <label for="firstName">Business name</label>
+                                              <input type="text" class="form-control" id="bname" placeholder="" value="" required>
+                                              <div class="invalid-feedback">
+                                                Valid Business name is required.
+                                              </div>
+                                            </div>
+                                          
+                                            <div class="col-md-6 mb-3">
+                                              <label for="lastName">logo</label>
+                                              <input type="file" class="form-control" style="padding:3px;" id="logo" placeholder="" value="" required>
+                                              <div class="invalid-feedback">
+                                                 logo is required.
+                                              </div>
+                                            </div>
+                                           
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="progress">Upload progress</label>
+                                        <div style="height: auto;" class="progress progress-sm mb-2 form-control">
+                                          <progress class="progress-bar" id="uploader1" style="width: 100%; height:5px; " value="0" max="100" role="progressbar" ></progress>
+                                        </div>
+                                        <small id="" class="form-text text-muted">After uploading the image file save button wiil appear.</small>
+                                  
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="firstName">Address</label>
+                                          <input type="text" class="form-control" id="address" placeholder="Business address" value="" required>
+                                          <div class="invalid-feedback">
+                                            Valid Business address is required.
+                                          </div>
+                                        </div>
+                                          
+                                  
+                                          
+                                  
+                                          <div class="mb-3">
+                                            <label for="Phone">GST Number</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                <span class="input-group-text">GSTIN</span>
+                                              </div>
+                                              <input type="text" class="gst form-control" id="gstin" placeholder="" >
+                                              <div class="invalid-feedback" style="width: 100%;">
+                                               
+                                              </div>
+                                            </div>
+                                          </div>
+                                  
+                                          <div class="mb-3">
+                                            <label for="Category">license</label>
+                                            <select class="custom-select d-block w-100" id="license" required>
+                                              <option value="">Choose...</option>
+                                              <option>Muncipalty</option>
+                                              <option>Trading license</option>
+                                              <option>udyog Card</option>
+                                              <option>Food license</option> 
+                                            </select>
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="lastName">license photo</label>
+                                            <input type="file" multiple class="form-control" style="padding:3px;" id="pic" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                               license is required.
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="progress">Upload progress</label>
+                                          <div style="height: auto;" class="progress progress-sm mb-2 form-control">
+                                            <progress class="progress-bar" id="uploader2" style="width: 100%; height:5px; " value="0" max="100" role="progressbar" ></progress>
+                                          </div>
+                                          <small id="" class="form-text text-muted">After uploading the image file save button wiil appear.</small>
+                                  
+                                          </div>
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="firstName">Business Email</label>
+                                            <input type="email" class="form-control" id="bemail" placeholder="Business email" value="" required>
+                                            <div class="invalid-feedback">
+                                              Valid Email is required.
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="mb-3">
+                                            <label for="lastName">Restaurants photo</label>
+                                            <input type="file" multiple class="form-control" style="padding:3px;" id="Rphoto" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                              5 pictures is required.
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="progress">Upload progress</label>
+                                          <div style="height: auto;" class="progress progress-sm mb-2 form-control">
+                                            <progress class="progress-bar" id="uploader3" style="width: 100%; height:5px; " value="0" max="100" role="progressbar" ></progress>
+                                          </div>
+                                          <small id="" class="form-text text-muted">After uploading the image file save button wiil appear.</small>
+                                  
+                                          </div>
+                                          </div>
+                                          
+                                          <div class="mb-3">
+                                            <label for="lastName">Owner photo</label>
+                                            <input type="file" multiple class="form-control" style="padding:3px;" id="Ophoto" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                              5 pictures is required.
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="progress">Upload progress</label>
+                                          <div style="height: auto;" class="progress progress-sm mb-2 form-control">
+                                            <progress class="progress-bar" id="uploader4" style="width: 100%; height:5px; " value="0" max="100" role="progressbar" ></progress>
+                                          </div>
+                                          <small id="" class="form-text text-muted">After uploading the image file save button wiil appear.</small>
+                                  
+                                          </div>
+                                          </div>
+                                  
+                                          <div class="mb-3">
+                                            <label for="lastName">Upload Aadhar Card</label>
+                                            <input type="file" multiple class="form-control" style="padding:3px;" id="Aadhar" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                              Adhar is required.
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="progress">Upload progress</label>
+                                          <div style="height: auto;" class="progress progress-sm mb-2 form-control">
+                                            <progress class="progress-bar" id="uploader5" style="width: 100%; height:5px; " value="0" max="100" role="progressbar" ></progress>
+                                          </div>
+                                          <small id="" class="form-text text-muted">After uploading the image file save button wiil appear.</small>
+                                  
+                                          </div>
+                                          </div>
+                                  
+                                          <div class="mb-3">
+                                            <label for="lastName">Pan Card</label>
+                                            <input type="file" multiple class="form-control" style="padding:3px;" id="pphoto" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                              Pan is required.
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="progress">Upload progress</label>
+                                          <div style="height: auto;" class="progress progress-sm mb-2 form-control">
+                                            <progress class="progress-bar" id="uploader6" style="width: 100%; height:5px; " value="0" max="100" role="progressbar" ></progress>
+                                          </div>
+                                          <small id="" class="form-text text-muted">After uploading the image file save button wiil appear.</small>
+                                  
+                                          </div>
+                                          </div>
+                                  
+                                          <div class="mb-3">
+                                            <label for="Phone">Owner phone</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                <span class="input-group-text">+91</span>
+                                              </div>
+                                              <input type="number" class="form-control" id="ophone" placeholder="phone number" required>
+                                              <div class="invalid-feedback" style="width: 100%;">
+                                                Owner phone number is required.
+                                              </div>
+                                            </div>
+                                          </div>
+                                  
+                                          <div class="mb-3">
+                                            <label for="firstName">Owner Email</label>
+                                            <input type="email" class="form-control" id="oemail" placeholder="Owner email" value="" required>
+                                            <div class="invalid-feedback">
+                                              Owner Email is required.
+                                            </div>
+                                          </div>
+                                        
+                                          <div class="mb-3">
+                                            <label for="firstName">Concerned Person</label>
+                                            <textarea type="text" class="form-control" id="cp" placeholder="any number of Person" value="" required> </textarea>
+                                            <div class="invalid-feedback">
+                                              Owner Email is required.
+                                            </div>
+                                          </div>
+                                       
+                                          <div class="mb-3">
+                                            <label for="Phone">Phone Number</label>
+                                            <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                <span class="input-group-text">+91</span>
+                                              </div>
+                                              <input type="text" class="form-control" id="phone" placeholder="phone number" required>
+                                              <div class="invalid-feedback" style="width: 100%;">
+                                               phone number is required.
+                                              </div>
+                                            </div>
+                                          </div>
+                                          
+                                          <div class="mb-3">
+                                            <label for="lastName">Address Proof</label>
+                                            <input type="file" multiple class="form-control" style="padding:3px;" id="Address" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                              Address is required.
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="progress">Upload progress</label>
+                                          <div style="height: auto;" class="progress progress-sm mb-2 form-control">
+                                            <progress class="progress-bar" id="uploader7" style="width: 100%; height:5px; " value="0" max="100" role="progressbar" ></progress>
+                                          </div>
+                                          <small id="" class="form-text text-muted">After uploading the image file save button wiil appear.</small>
+                                  
+                                          </div>
+                                          </div>
+                                  
+                                          <div class="mb-3">
+                                            <label for="lastName">Cancelled Cheque / Bank passbook front page</label>
+                                            <input type="file" multiple class="form-control" style="padding:3px;" id="cc" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                              Cancelled Cheque / Bank Passbook front page is required.
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="progress">Upload progress</label>
+                                          <div style="height: auto;" class="progress progress-sm mb-2 form-control">
+                                            <progress class="progress-bar" id="uploader8" style="width: 100%; height:5px; " value="0" max="100" role="progressbar" ></progress>
+                                          </div>
+                                          <small id="" class="form-text text-muted">After uploading the image file save button wiil appear.</small>
+                                  
+                                          </div>
+                                          </div>
+                                  
+                                  
+                                          <hr class="mb-4">
+                                          <button class="btn btn-primary btn-lg btn-block" onclick="register()" type="submit">Register Business</button>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  
+                                  
+                                  </div>
+                                    
+                    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="form-validation.js"></script>
+        <script src="assets/plugins/jquery-steps/jquery.steps.min.js"></script>
+        <script src="assets/pages/create-franchize.js"></script>
+        
